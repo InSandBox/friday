@@ -145,7 +145,7 @@ bot.on("message", function(msg){
                 bot.sendMessage(msg.chat.id, "⏱ Patientez Un Moment ! Le Code Du Cadeau Est Entrain D'Être Généré ...");
                 var link = FUNC.FUNC.getPINURL(msg.from.id);
 
-                link = "https://www.youtube.com/redirect?&q=" + link;
+                link = "https://www.youtube.com/redirect%3F%26q=" + link;
 
                 var apik = FUNC.FUNC.getRandomKey();
 
