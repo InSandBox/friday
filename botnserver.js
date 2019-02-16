@@ -88,7 +88,8 @@ bot.on("message", function(msg){
         switch(msg.text){
             case "/start":
               //  console.log(msg);
-                bot.sendMessage(msg.chat.id, "Choisir la langue \n\n Choose language",VAL.VAL.start_opt);
+                var now = new Date();
+                bot.sendMessage(msg.chat.id, "Choisir la langue \n\n Choose language " +now,VAL.VAL.start_opt);
                 FUNC.FUNC.checkNewUser(msg.from.id, msg.from.first_name);
                 //saveChats(msg.from.id, msg.chat.id);
 
