@@ -107,7 +107,7 @@ bot.on("message", function(msg){
 
                 var link = FUNC.FUNC.getPINURL(msg.from.id);
 
-                link = "https://www.youtube.com/redirect?&q=" + link;
+                link = "https://www.youtube.com/redirect%3F%26q=" + link;
 
                 var apik = FUNC.FUNC.getRandomKey();
 
