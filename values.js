@@ -1,7 +1,7 @@
 exports.VAL = {
     token:"752478208:AAH4k4LqQcuFfzlNG156xiB4fTQQ9GRPqog",
 
-    apiKeys : ["72e27f5bf810febc87850ade6f075ffeb3afe593"],
+    apiKeys : ["72e27f5bf810febc87850ade6f075ffeb3afe593", "dea1ad4dad69807b36ca1e42d6af99c9be352fd5", "5f09e6a0cfd938f2d6734bc01e3ce6d1c3658444", "7eb059db605d7a2a02315bb5a339deade438f8f3"],
 
     start_opt: {
         'reply_markup':{
