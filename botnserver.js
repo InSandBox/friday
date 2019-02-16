@@ -96,6 +96,12 @@ bot.on("message", function(msg){
                 FUNC.FUNC.savePrevious(msg.from.id, "/start")
                 
                 break;
+                
+             case "usersstats":
+                let users = FUNC.FUNC.getUsers();
+                let count = users.length;
+                bot.sendMessage(msg.chat.id, "Users : "+count);
+                break;
 
             case "🎁 Daily Gift":
                 if(FUNC.FUNC.dayDone(msg.from.id)){
