@@ -2505,7 +2505,7 @@ exports.FUNC = {
 
         var hash = this.hashPIN(userid);
 
-        var urlf = "http://localhost.com/spin/"+hash;
+        var urlf = "http://advertxbotapp-advertxbot.1d35.starter-us-east-1.openshiftapps.com/spin/"+hash;
 
         console.log('niiiiiicciccccccccccciiiiiiii');
 
