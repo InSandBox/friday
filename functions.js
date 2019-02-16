@@ -1525,7 +1525,7 @@ exports.FUNC = {
             var s_opt = {
                 'reply_markup':{
                     'inline_keyboard':[
-                        [{text:"Visiter", url: "https://festive-afterthought.glitch.me/view/"+hash}, {text:"✅ Fait", "callback_data":"sdone"}]
+                        [{text:"Visiter", url: "http://advertxbotapp-advertxbot.1d35.starter-us-east-1.openshiftapps.com/view/"+hash}, {text:"✅ Fait", "callback_data":"sdone"}]
                     ]
                 }
             }
@@ -1533,7 +1533,7 @@ exports.FUNC = {
             var s_opt = {
                 'reply_markup':{
                     'inline_keyboard':[
-                        [{text:"Visit", url: "https://festive-afterthought.glitch.me/view/"+hash}, {text:"✅ Done", "callback_data":"sdone"}]
+                        [{text:"Visit", url: "http://advertxbotapp-advertxbot.1d35.starter-us-east-1.openshiftapps.com/view/"+hash}, {text:"✅ Done", "callback_data":"sdone"}]
                     ]
                 }
             }
