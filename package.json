@@ -1,0 +1,26 @@
+{
+  "name": "task-crypto",
+  "version": "1.0.0",
+  "description": "Telegram Bot To Earn Free Cryptos",
+  "main": "bot.js",
+  "scripts": {
+    "test": "run",
+    "start": "node botnserver.js"
+  },
+  "author": "Mr RoyNoone",
+  "license": "MIT",
+  "dependencies": {
+    "block_io": "^2.0.0",
+    "coinbase": "^2.0.8",
+    "etherscan-api": "^9.0.0",
+    "is-url": "^1.2.4",
+    "log4js": "^3.0.6",
+    "node-fetch": "^2.2.0",
+    "node-telegram-bot-api": "^0.30.0",
+    "nodemon": "^1.18.5",
+    "request-promise": "^4.2.4",
+    "secure-pin": "^1.0.14",
+    "url": "^0.11.0",
+    "wallet-address-validator": "^0.2.1"
+  }
+}

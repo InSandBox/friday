@@ -1,0 +1,39 @@
+</body>
+<script>
+
+    function httpGetAsync(theUrl, callback)
+    {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.onreadystatechange = function() { 
+            if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+                callback(xmlHttp.responseText);
+        }
+        xmlHttp.open("GET", theUrl, true);
+        xmlHttp.send(null);
+    }
+
+    var wait = document.getElementById("wait");
+    var iframe = document.getElementById("iframe");
+    var countdown = document.getElementById("countdown");
+    var snuHash = document.getElementById("iframe").getAttribute("data");
+
+    iframe.setAttribute("height", window.innerHeight-65);
+    var i = 0
+    setTimeout(function(){
+        var timer = setInterval(function(){
+            countdown.innerText = countdown.innerText - 1 
+            i++
+            if(i>=20){
+                clearInterval(timer)
+                wait.innerText="";
+                httpGetAsync("/done/"+snuHash, function(rep){
+                    countdown.innerText=rep;
+                })
+                
+            }
+                
+         }, 1000)
+    }, 2000);
+
+</script>
+</html>

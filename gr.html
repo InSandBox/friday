@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+</head>
+<body>
+    <div style="background-color: rgb(134, 97, 97); width: 101%; margin-left: -7px; padding-top: 5px; padding-bottom: 5px;">
+        <span style="font-size: 1.3em; padding-left: 200px; color: blanchedalmond;" id="wait">Wait</span>
+        <span id="countdown" style="font-weight: bold; font-size: 1.3em; padding-left: 40px; color: antiquewhite;">20</span>
+
+    </div>
+    <iframe style="margin-left: -8px; border: none;" src="" height="1000" width="101%" scrolling="yes" id="iframe">Your Browser Does Not Support Iframes</iframe>
+    
+</body>
+<script>
+
+    var wait = document.getElementById("wait");
+    var iframe = document.getElementById("iframe");
+    var countdown = document.getElementById("countdown");
+    iframe.setAttribute("height", window.innerHeight-65);
+    var i = 0
+    setTimeout(function(){
+        var timer = setInterval(function(){
+            countdown.innerText = countdown.innerText - 1 
+            i++
+            if(i>=20){
+                wait.innerText="";
+                countdown.innerText="You get your reward";
+
+                clearInterval(timer)
+            }
+                
+         }, 1000)
+    }, 2000);
+
+
+</script>
+</html>
