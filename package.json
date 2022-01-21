@@ -14,7 +14,7 @@
     "coinbase": "^2.0.8",
     "etherscan-api": "^9.0.0",
     "is-url": "^1.2.4",
-    "log4js": "^3.0.6",
+    "log4js": "^6.4.0",
     "node-fetch": "^2.2.0",
     "node-telegram-bot-api": "^0.30.0",
     "nodemon": "^1.18.5",
